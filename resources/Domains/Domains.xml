@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<domains>
+	<domain db="TAB_NOTICIA" ui="noticia">
+		<attr db="ID_TAB_NOTICIA" ui="id" type="int(12)" />
+		<attr db="DES_TITULO" ui="titulo" type="varchar(511)" />
+		<attr db="DES_CONTEUDO" ui="conteudo" type="varchar(65535)" />
+		<attr db="PATH_FOTO" ui="foto" type="varchar(1023)" />
+		<attr db="DES_TAGS" ui="tags" type="varchar(1023)" />
+		<attr db="DAT_NOTICIA" ui="datanoticia" type="timestamp" />
+	</domain>
+	
+	<domain db="TAB_SERVICO2" ui="servico2">
+		<attr db="ID_TAB_SERVICO" ui="id" type="int(12)" />
+		<attr db="DES_MIN_SERVICO" ui="minidescricao" type="varchar(255)" />
+		<attr db="DES_SERVICO" ui="descricao" type="varchar(255)" />
+		<attr db="DAT_SERVICO" ui="datetimestamp" type="timestamp" />
+	</domain>
+	
+	<domain db="TAB_USER" ui="user">
+		<attr db="ID_TAB_USUARIO" ui="id" type="int(12)" />
+		<attr db="SENHA" ui="senha" type="varchar(255)" />
+	</domain>
+	
+	<domain db="TAB_SERVICO" ui="servico" >
+		<attr db="ID_TAB_SERVICO" ui="id" type="int(12)" />
+		<attr db="NOME_EMPRESA" ui="empresa" type="varchar(255)" />
+		<attr db="DESC_MODELO_VEIC" ui="modelo" type="varchar(255)" />
+		<attr db="DESC_MARCA_VEIC" ui="marca" type="varchar(255)" />
+		<attr db="DESC_SERVICO" ui="descricao" type="varchar(255)" />
+	</domain>
+	
+	<domain db="TAB_FOTO_SERVICO" ui="foto_servico" >
+		<attr db="ID_TAB_FOTO_SERVICO" ui="id" type="int(12)" />
+		<attr db="ID_TAB_SERVICO" ui="servico" type="int(12)" />
+		<attr db="PATH_FOTO" ui="path" type="varchar(511)" />
+	</domain>
+	
+	<!-- UTIL PONTO REMOVER -->
+	
+	<domain db="TAB_PONTO" ui="ponto">
+		<attr db="ID_TAB_PONTO" ui="id" type="int(12)" />
+		<attr db="DT_DATA" ui="data" type="date" />
+		<attr db="DT_HORARIO" ui="horario" type="time" />
+		<attr db="DES_SENTIDO" ui="sentido" type="varchar(1)" />
+		<attr db="PATH_FOTO" ui="path" type="varchar(511)" />
+		<attr db="DT_ALTERACAO" ui="alteracao" type="timestamp" />
+	</domain>
+</domains>
