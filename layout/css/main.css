@@ -287,13 +287,12 @@ textarea {
    
 
 body {
-	font-family:'Bariol-Regular';
+	font-family:'Raleway', sans-serif;
 	font-size:62.5%;
 	font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
     -webkit-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
-	line-height:1.4;
 }
 
 #wrapper {
@@ -302,6 +301,7 @@ body {
 }
 
 ul.nav { 
+    margin:0px;
 	background: url('../images/bg-nav.png');
 }
 
@@ -311,12 +311,18 @@ ul.nav li.nav {
 }
 
 ul.nav li.nav a.nav { 
-	padding:0px 10px 0px 10px; 
+	padding:0px 5px 0px 5px; 
+	margin-left:-3px;
 	text-decoration:none;
-	color:white;
-	font-size:2.4em;
+	color:#fff;
+	font-size:3.6em;
+	font-weight:200; 
 }
 
+ul.nav li.nav a.nav:hover {
+    background-color: #fff;
+    color:#333;
+}
  
  /* ==========================================================================
    Author's custom styles FORM STYLE 
@@ -334,7 +340,7 @@ form {
 
 /*input / textarea*/
 input[type=text], textarea {
-    font: 1.3em 'Bariol-Regular', sans-serif;
+    font: 1.3em 'Raleway', sans-serif;
     color: #666;
     padding:3px;
     border:1px solid #ddd;
@@ -376,7 +382,7 @@ textarea {
 
 /*button*/
 input[type=button], input[type=submit]{
-    font:1.3em 'Bariol-Regular', sans-serif;
+    font:1.3em 'Raleway', sans-serif;
     letter-spacing:0px;
     line-height:14px;
     color:#666;
@@ -434,7 +440,7 @@ label {
 
 /*select*/
 select {
-    font:1em 'Bariol-Regular', sans-serif;
+    font:1em 'Raleway', sans-serif;
     color:#666;
     border:1px solid #c5c5c5;
     background:#f4f4f4;
@@ -453,6 +459,6 @@ select:disabled {
 }
 /*option*/
 option {
-    font:1.3em 'Bariol-Regular', sans-serif;
+    font:1.3em 'Raleway', sans-serif;
     color:#666;
 }
