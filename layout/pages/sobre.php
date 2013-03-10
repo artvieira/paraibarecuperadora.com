@@ -1,11 +1,18 @@
-﻿<div id="bio-content" class="text-opaque" style="text-align:center; font-size:3.5em;">
-	<p>
-		Who I Am
-	</p>
-	<p>
-		I am Arthur, programmer, illustrator, designer, curious, eternal student and racing fan.
-	</p>
-	<p>
-		Since 2008 I did various freelance work in various segments of computing. In 2011 I started to work hard as a Java developer. çç ê
-	</p>
-</div>
+﻿<style>
+.sobre {
+    font-size:4em;
+    font-weight:300;
+    margin:0px;  
+}
+
+</style>
+<section style="background: right url('/images/caminhao_sobre.png'); background-repeat: no-repeat;">
+    <section style="width: 50%;">
+        <p class="sobre">Empresa criada em 2010 deste então oferecendo os melhores preços e qualidade aos clientes.</p>
+        <br /><br /><br />
+        <p class="sobre">Fundada por Humberto Moreira Lucena, que atende diretamento todos os clientes.</p>
+        <br /><br /><br />
+        <p class="sobre">Localização escolhida para oferecer melhor acesso para veiculos grandes</p>
+        <br /><br /><br />
+    </section>
+</section>
