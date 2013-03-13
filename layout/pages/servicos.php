@@ -21,7 +21,7 @@ background-color:#ddd;
 
 }
 #group{
-width:460px;
+width:460px;   
 height:280px;
 margin:20px;
 margin-top:-180px;
