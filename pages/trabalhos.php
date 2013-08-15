@@ -1,104 +1,112 @@
-<?php 
-	$construcao = true;
-
-	if ($construcao) {
-?>
-
-<article style="text-align: center;">
-<h1>Em construção...</h1>
-</article>
-
-<?php
-	
-	} else {
-?>
-
 <style>
-    #slides {
-      display: none
-    }
+.da-slider {
+	height: 525px;
+}
+ 
+.da-slide h2 {
+	margin-top: -30px;
+	margin-left: -20px;
+	font-size: 3.3em;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
 
-    #slides .slidesjs-navigation {
-      margin-top:3px;
-    }
+.da-slide .da-img {
+	margin-left: -290px;
+}
 
-    #slides .slidesjs-previous {
-      margin-right: 5px;
-      float: left;
-    }
+.da-slide p {
+	color:#fff;
+	font-size: 1.4em;
+	z-index:999;
+	margin-top: -115px;
+	margin-left: -45px;
+	width:160px;
+	height:340px;
+	line-height:normal;
+	overflow:hidden;
+}
 
-    #slides .slidesjs-next {
-      margin-right: 5px;
-      float: left;
-    }
+.da-slide .da-link {
+	margin-bottom: -100px; 
+}
 
-    .slidesjs-pagination {
-      margin: 6px 0 0;
-      float: right;
-      list-style: none;
-    }
-
-    .slidesjs-pagination li {
-      float: left;
-      margin: 0 1px;
-    }
-
-    .slidesjs-pagination li a {
-      display: block;
-      width: 13px;
-      height: 0;
-      padding-top: 13px;
-      background-image: url(/img/pagination.png);
-      background-position: 0 0;
-      float: left;
-      overflow: hidden;
-    }
-
-    .slidesjs-pagination li a.active,
-    .slidesjs-pagination li a:hover.active {
-      background-position: 0 -13px
-    }
-
-    .slidesjs-pagination li a:hover {
-      background-position: 0 -26px
-    }
-
-    #slides a:link,
-    #slides a:visited {
-      color: #333
-    }
-
-    #slides a:hover,
-    #slides a:active {
-      color: #9e2020
-    }
-
-    .navbar {
-      overflow: hidden
-    }
+.da-slide .da-link {
+	top: 380px;
+	font-size: 1.3em;
+	border-radius: 0px;
+	box-shadow: none;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	border: none;
+	padding: 0px;
+	line-height: 10px;
+	text-align: center;
+	background: none;
+}
 </style>
 
-<section class="container">
-	<section id="slides">
-		<img src="/images/slides/img1.jpg" width="570px" height="450px" alt="Slide 1"/>
-		<img src="/images/slides/img2.jpg" width="570px" height="450px" alt="Slide 2"/>
-		<img src="/images/slides/img3.png" width="570px" height="450px" alt="Slide 3"/>
-		
-		<a href="#" class="slidesjs-previous slidesjs-navigation"><img src="/images/prev.png"></a>
-		<a href="#" class="slidesjs-next slidesjs-navigation"><img src="/images/next.png"></a>
-	</section>
+<section class="content-section">
+	<div id="da-slider" class="da-slider">
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115054.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115147.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115211.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115300.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115453.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115520.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115705.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+	    
+	    <div class="da-slide">
+	    	<h2>Paraiba Recuperadora</h2>
+	        <div class="da-img">
+	            <img src="/images/cslider/imgs/IMG_20130810_115732.jpg" alt="Paraiba Recuperadora" />
+	        </div>
+	    </div>
+		    
+	    <nav class="da-arrows">
+        	<span class="da-arrows-prev"></span>
+       		<span class="da-arrows-next"></span>
+        </nav>
+	</div>
 </section>
-
-
-<section>
-	<h1>Clientes</h1>
-
-	<p>LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO 
-	LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO 
-	LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO 
-	LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO 
-	LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO LOGO </p>
-</section>
-<?php 
-}
-?>

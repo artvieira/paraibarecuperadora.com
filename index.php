@@ -71,6 +71,8 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" type="text/css"  href="/css/normalize.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cslider/frame.css">
+	<link rel="stylesheet" type="text/css" href="/css/cslider/animations.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,700"/>
 	<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 	
@@ -125,7 +127,7 @@
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script type="text/javascript" src="/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script type="text/javascript" src="/js/vendor/jquery.slides.min.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery.cslider.min.js"></script>
 <script type="text/javascript" src="/js/plugins.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <script type="text/javascript">
