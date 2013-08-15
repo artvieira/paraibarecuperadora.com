@@ -1,48 +1,53 @@
 <?php	
-	
-	if (!empty($_POST)) {
-		$msg = '';
-		
-		if (empty($_POST['nome'])) {
-			$msg .= 'nome vazio<br>';
-		}
-		
-		if (empty($_POST['email'])) {
-			$msg .= 'email vazio<br>';
-		}
-		
-		if (empty($_POST['assunto'])) {
-			$msg .= 'assunto vazio<br>';
-		}
-		
-		if (empty($_POST['msg'])) {
-			$msg .= 'msg vazio<br>';
-		}
-		
-		if (empty($msg)) {
-			$to          = $_POST['email'];
-			$subject   = $_POST['assunto'].', de '.$_POST['nome'];
-			$message = $_POST['msg'];
-			$headers  = 'From: webmaster@example.com' . "\r\n" .
-				'Reply-To: webmaster@example.com' . "\r\n" .
-				'X-Mailer: PHP/' . phpversion();
+$GLOBALS['msg'] = '';
 
-			if (mail($to, $subject, $message, $headers)) {
-				$_POST['nome'] 		= null;
-				$_POST['email'] 		= null;
-				$_POST['assunto'] 	= null;
-				$_POST['msg'] 		= null;
-			
-				$GLOBALS['msgEmail'] = "Email enviado com sucesso!!!";
-			} else { 
-				$GLOBALS['msgEmail'] = "Falha no envio do email, favor tentar mais tarde!!!";
-				
-				// implementar sistema de aviso quando sistema falhar!!!!
-			}
-		} else {
-			 $GLOBALS['msgEmail'] = $msg;
-		}
+if (isset($_POST['submit']) && $_POST['submit']=='Enviar') {
+	$msg = '';
+	
+	if (empty($_POST['nome'])) {
+		$msg .= 'nome vazio<br>';
 	}
+	
+	if (empty($_POST['email'])) {
+		$msg .= 'email vazio<br>';
+	}
+	
+	if (empty($_POST['assunto'])) {
+		$msg .= 'assunto vazio<br>';
+	}
+	
+	if (empty($_POST['msg'])) {
+		$msg .= 'mensagem vazio<br>';
+	}
+	
+	if (empty($msg)) {
+		$to          = 'arthurvmx5@gmail.com';
+		
+		$subject   = $_POST['assunto'].', de '.$_POST['nome'];
+		
+		$message = $_POST['msg'].'.Responder a '.$_POST['email'];
+			
+		$headers = 'MIME-Version: 1.0' . '\r\n'
+	    . 'From: <contato@paraibarecuperadora.com.br>' . '\r\n'
+		. 'Reply-To: <'.$_POST['email'].'>' . '\r\n';
+
+
+		if (mail($to,$subject,$message,$headers, '-f contato@paraibarecuperadora.com.br')) {
+			$_POST['nome'] 		= null;
+			$_POST['email'] 	= null;
+			$_POST['assunto'] 	= null;
+			$_POST['msg'] 		= null;
+		
+			$GLOBALS['msg'] = "Email enviado com sucesso!!!";
+		} else { 
+			$GLOBALS['msg'] = "Falha no envio do email, favor tentar mais tarde!!!";
+			
+			// implementar sistema de aviso quando sistema falhar!!!!
+		}
+	} else {
+		$GLOBALS['msg'] = $msg;
+	}	
+}
 ?>
 
 <style>
@@ -68,7 +73,7 @@ margin:0;
     </article>
     
     <article style="width:50%; float:right; background-color:#ddd;">
-        <form action="/contato/" method="post">
+        <form action="" method="post">
 			<h1>Envio de E-Mail</h1>
 		
             <label for="nome">Nome:</label>
@@ -89,15 +94,17 @@ margin:0;
 			<br>
 			<br>
 		
+			<label for="assunto">Mensagem:</label>
+			<br>
             <textarea id="msg" name="msg" class="text-area required" rows="5" cols="41"><?php if (!empty($_POST['msg'])) echo $_POST['msg'];?></textarea>
             <br>
             
-			<p style="font-size:1.6em; font-weight:400; color:red;"><?php if (!empty($GLOBALS['msgEmail'])) echo $GLOBALS['msgEmail'];?></p>
+			<p style="font-size:1.6em; font-weight:400; color:red;"><?php if (!empty($GLOBALS['msg'])) echo $GLOBALS['msg'];?></p>
 			
 			
 			<p>TODOS os campos são requeridos.</p>
-            <input id="submit" type="submit" style="display: inline; margin-top: 10px;" value="Enviar" />
-            <input id="limpar" type="button" style="display: inline; margin-top: 10px;" value="Limpar" />
+            <input id="submit" name="submit" type="submit" style="display: inline; margin-top: 10px;" value="Enviar" />
+            <input id="limpar" name="limpar" type="button" style="display: inline; margin-top: 10px;" value="Limpar" />
         </form>
     </article>
 </section>
