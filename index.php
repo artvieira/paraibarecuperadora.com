@@ -3,7 +3,7 @@
 	$detect = new Mobile_Detect();
 	
 	if ($detect->isMobile()) {
-		header("Location: http://paraibarecuperadora.com.br/mobile");
+		header("Location: http://mobile.paraibarecuperadora.com.br");
 	}
 
 	$GLOBALS['title']  = ' - Paraiba Recuperadora';
