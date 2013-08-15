@@ -43,7 +43,7 @@
 			header('Location: /404.html');
 		}
 	} else {
-		$GLOBALS['title'] 				= 'Serviços' . $GLOBALS['title'];
+		$GLOBALS['title'] 		    = 'Serviços' . $GLOBALS['title'];
 		$GLOBALS['includePage'] 	= 'pages/servicos.php';
 		$GLOBALS['keyWords'] 		= $keyWords['servicos'];
 		$GLOBALS['description'] 	= $description['servicos'];
@@ -68,7 +68,7 @@
 	
 	<title><?php echo $GLOBALS['title'] ; ?></title>
 	
-	<link rel="shortcut icon" href="/favicon.png" />
+	<link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="stylesheet" type="text/css"  href="/css/normalize.min.css"/>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:200,300,400,700"/>
@@ -111,8 +111,15 @@
 	</section>
 	
 	<footer style="width:100%; height:60px; color:#aaa; background:#333; text-align: center; clear:both;">
-		<img alt="HTML5+CCS3" style="margin-top:10px; float:left;" src="/images/HTML5+CSS3_65x40.png">
-		<p style="margin:0px; font-size: 1.5em;">Todos direitos reservados Paraíba Recuperadora&copy;</p>
+		<a href="http://arthuvieira.com" style="float:left; margin-top:10px;">
+			<img alt="HTML5+CCS3" src="/images/HTML5+CSS3_65x40.png">	
+		</a>
+		
+		<a style="float:left; margin-top:10px;" href="https://www.digitalocean.com/?refcode=0228080b172b">
+			<img alt="Digital Ocean" src="https://www.digitalocean.com/assets/v2/badges/digitalocean-badge-white.png">
+		</a> 
+		
+		<p style="text-align:center; margin:0px; font-size: 1.5em;">Todos direitos reservados Paraíba Recuperadora&copy;</p>
 	</footer>
 </div>
 

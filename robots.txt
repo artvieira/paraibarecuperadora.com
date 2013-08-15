@@ -38,7 +38,4 @@ User-agent: yahoo-blogs/v3.9
 Disallow: 
 User-agent: *
 Disallow: 
-Disallow: /cgi-bin/
-Disallow: /bak/
-Disallow: /folders/
 Sitemap: http://paraibarecuperadora.com.br/sitemap.xml
