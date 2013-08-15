@@ -21,7 +21,7 @@ if (isset($_POST['submit']) && $_POST['submit']=='Enviar') {
 	}
 	
 	if (empty($msg)) {
-		$to          = 'arthurvmx5@gmail.com';
+		$to          = 'humbertomlucena@gmail.com';
 		
 		$subject   = $_POST['assunto'].', de '.$_POST['nome'];
 		
